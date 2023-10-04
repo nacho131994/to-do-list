@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.list-body{
+    width:100%
+}
+.list-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+    
+   
+}
+.list-items-container{
+    margin-top:20px;
+    background-color: rgb(204, 204, 204);
+    width:40rem;
+   margin:20px auto
+  
+ 
+}
+
+.list-footer{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    padding-bottom:10px;
+    padding-top:10px
+}
+.list-footer p{
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.delete-all-tasks-button{
+    background-color: rgb(79, 79, 79);
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:5px;
+    cursor:pointer
+}
+.list-footer button:hover{
+    background-color: rgb(221, 18, 18);
+    color:white;
+   transform: scale(1.2);
+}
+.list-items-container-dark-style{
+    background-color: rgb(91, 8, 91);
+}
+.list-footer-dark-style{
+    background-color: purple
+}
+.delete-all-tasks-button-dark-style{
+    background-color: rgb(79, 15, 99);
+    color:white;
+    border:1px solid white;
+}
+
+/*-------------------------------------RESPONSIVE-----------------------------------------------------------------------*/
+
+@media(max-width:768px){
+    .list-footer {
+       display: flex;
+       flex-direction: row;
+       gap:3rem;
+       padding:2rem 0 2rem 0
+    }
+    .delete-all-tasks-button{
+        width:200px;
+        height:70px;
+        font-size: 20px;
+    }
+    .list-footer p{
+        font-size: 50px;
+        
+    }
+    
+}

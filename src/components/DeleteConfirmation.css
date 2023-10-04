@@ -1,0 +1,91 @@
+.delete-confirmation-container{
+    border:1px solid black;
+    background-color: white;
+    padding:7px 10px 7px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    border-radius:10px
+}
+.delete-confirmation-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.delete-confirmation-buttons :first-child{
+    background-color: rgb(49, 202, 49);
+    padding:3px 10px 3px 10px;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor: pointer;
+}
+.delete-confirmation-buttons :first-child:hover{
+   background-color:rgb(50, 163, 50); 
+   transform: scale(1.2);
+}
+.delete-confirmation-buttons :last-child{
+    background-color: rgb(218, 17, 17);
+    padding:3px 10px 3px 10px;
+    color:white;border:none;
+    border-radius:10px;
+    cursor: pointer;
+}
+.delete-confirmation-buttons :last-child:hover{
+    background-color:rgb(180, 40, 40); 
+    transform: scale(1.2);
+ }
+
+
+.delete-confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .delete-confirmation-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .delete-confirmation-container-dark-style{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border:3px solid rgb(232, 232, 232)
+  }
+
+
+  /*------------------------------------RESPONSIVE---------------------------------------------------------------------*/
+
+  @media (max-width: 768px) {
+    .delete-confirmation-container{
+   width:500px;
+   height:fit-content;
+   gap:2rem;
+   font-size:30px
+  }
+  .delete-confirmation-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    display: flex;
+    justify-content: center;
+}
+.delete-confirmation-buttons button{
+  width:6rem;
+  height:4rem;
+  font-size: 20px;
+}
+  }
+  
