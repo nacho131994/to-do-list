@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+//COMPONENTS
 import Title from "./components/Title.jsx";
 import List from "./components/List";
 
+//STYLES
 import "./App.css";
 
 function App() {

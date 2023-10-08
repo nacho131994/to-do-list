@@ -7,11 +7,14 @@
     margin:0 auto;
     justify-content: center;
     align-items: center;
-    text-align:center;
-    
+    text-align:center; 
 }
-
-.list-items i{
+.tasks-buttons{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+.fa-x{
     color:red;
     cursor: pointer;
 }
@@ -23,8 +26,7 @@
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 .todo-task{
     background-color: rgb(255, 255, 255);
@@ -32,13 +34,18 @@
     margin:1rem;
     width:30rem;
     padding:0.5rem;
-    
 }
 .todo-section li{
     list-style: none;
 }
+.fa-pen-to-square{
+    color:rgb(73, 172, 243);
+    cursor: pointer;
+   
+   
+}
 .no-tasks-to-be-done-message{
-    background-color: rgb(204, 204, 204);;
+    background-color: rgb(221, 221, 221);;
     font-size:50px;
     padding-top:3rem;
     padding-bottom:3rem;
@@ -46,7 +53,6 @@
     color:white;
     -webkit-text-stroke: 1px black; 
 }
-
 .todo-task-dark{
     background-color: rgba(134, 27, 134, 0.503);
     color:rgb(255, 255, 255);
@@ -58,7 +64,6 @@
 .is-done{
     text-decoration: line-through ;
 }
-
 /*-------------------------------------RESPONSIVE------------------------------------------------------------------*/
 @media (max-width: 768px) {
    
@@ -76,5 +81,8 @@
       }
       .no-tasks-to-be-done-message{
        font-size:80px
+    }
+    .tasks-buttons{
+        font-size:30px
     }
 }

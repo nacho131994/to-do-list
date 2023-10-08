@@ -1,0 +1,82 @@
+.edit-task-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-task-container{
+    border:1px solid black;
+    background-color: white;
+    padding:7px 10px 7px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    border-radius:10px;
+    width:500px
+}
+.edit-task-container-dark-style{
+    border:3px solid purple;
+    background-color: rgb(65, 65, 65);
+    color:white;
+}
+.edit-task-body{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.edit-task-body p{
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin:0
+}
+.edit-task-body input{
+   height:50px;
+   top:30px;
+   width:100%;
+   padding:0px 5px 0px 5px;
+   font-size: 20px;
+}
+.edit-task-item-dark-style{
+    background-color: rgb(169, 130, 169);
+    color:white;
+    border:1px solid purple
+}
+.edit-task-buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:2rem
+}
+.edit-task-buttons :first-child{
+    background-color:rgb(73, 172, 243);;
+    padding:3px 10px 3px 10px;
+    color:white;border:none;
+    border-radius:10px;
+    cursor: pointer;
+}
+.edit-task-buttons :first-child:hover{
+    background-color:rgb(53, 129, 183);;
+    transform: scale(1.2);
+}
+.edit-task-buttons :last-child{
+    background-color: rgb(218, 17, 17);
+    padding:3px 10px 3px 10px;
+    color:white;border:none;
+    border-radius:10px;
+    cursor: pointer;
+}
+.edit-task-buttons :last-child:hover{
+    background-color:rgb(180, 40, 40); 
+    transform: scale(1.2);
+ }
